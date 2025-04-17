@@ -1,19 +1,19 @@
 main:
-  appName: "your app name"
+  appName: "gchat"
   host: "127.0.0.1"
   port: 8000
   
 mysql:
-  host: "127.0.0.1"
+  host: "123.60.80.170"
   port: 3306
   user: "root"
-  password: "123456"
-  databaseName: "your database name"
+  password: "${MYSQL_PASSWORD}"
+  databaseName: "gchat"
   
 redis:
-  host: "127.0.0.1"
+  host: "123.60.80.170"
   port: 6379
-  password: "123456"
+  password: "${REDIS_PASSWORD}"
   db: 0
   
 authCode:
