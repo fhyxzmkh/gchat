@@ -20,3 +20,7 @@ type Message struct {
 	CreatedAt  time.Time `gorm:"column:created_at;not null;comment:创建时间"`
 	AVdata     string    `gorm:"column:av_data;comment:通话传递数据"`
 }
+
+func (Message) TableName() string {
+	return "message"
+}

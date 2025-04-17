@@ -14,3 +14,7 @@ type UserContact struct {
 	CreatedAt   time.Time      `gorm:"column:created_at;type:datetime;not null;comment:创建时间"`
 	DeletedAt   gorm.DeletedAt `gorm:"column:deleted_at;type:datetime;index;comment:删除时间"`
 }
+
+func (UserContact) TableName() string {
+	return "user_contact"
+}

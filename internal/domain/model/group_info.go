@@ -20,3 +20,7 @@ type GroupInfo struct {
 	CreatedAt time.Time       `gorm:"column:created_at;index;type:datetime;not null;comment:创建时间"`
 	DeletedAt gorm.DeletedAt  `gorm:"column:deleted_at;index;comment:删除时间"`
 }
+
+func (GroupInfo) TableName() string {
+	return "group_info"
+}

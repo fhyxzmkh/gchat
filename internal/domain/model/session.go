@@ -15,3 +15,7 @@ type Session struct {
 	CreatedAt   time.Time      `gorm:"column:created_at;index;type:datetime;comment:创建时间"`
 	DeletedAt   gorm.DeletedAt `gorm:"column:deleted_at;index;type:datetime;comment:删除时间"`
 }
+
+func (Session) TableName() string {
+	return "session"
+}

@@ -21,3 +21,7 @@ type UserInfo struct {
 	IsAdmin   int8           `gorm:"column:is_admin;not null;comment:是否是管理员，0.不是，1.是"`
 	Status    int8           `gorm:"column:status;not null;comment:状态，0.正常，1.禁用"`
 }
+
+func (UserInfo) TableName() string {
+	return "user_info"
+}

@@ -16,3 +16,7 @@ type ContactApply struct {
 	LastApplyAt time.Time      `gorm:"column:last_apply_at;type:datetime;not null;comment:最后申请时间"`
 	DeletedAt   gorm.DeletedAt `gorm:"column:deleted_at;index;type:datetime;comment:删除时间"`
 }
+
+func (ContactApply) TableName() string {
+	return "contact_apply"
+}
