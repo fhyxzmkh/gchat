@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func JsonBack(c *gin.Context, message string, ret int, data interface{}) {
+func ResponseEntity(c *gin.Context, message string, ret int, data interface{}) {
 	if ret == 0 {
 		if data != nil {
 			c.JSON(http.StatusOK, gin.H{

@@ -16,6 +16,10 @@ func init() {
 	GE.Use(cors.New(corsConfig))
 }
 
+func init() {
+
+}
+
 func main() {
 
 }
