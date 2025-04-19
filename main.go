@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"gchat/internal/config"
-	"gchat/internal/repository/dao"
+	"gchat/internal/dao"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"

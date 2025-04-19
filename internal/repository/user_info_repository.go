@@ -2,8 +2,8 @@ package repository
 
 import (
 	"context"
+	"gchat/internal/dao"
 	"gchat/internal/domain/model"
-	"gchat/internal/repository/dao"
 )
 
 type UserInfoRepository struct {
